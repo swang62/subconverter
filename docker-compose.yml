@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: wget -qO- http://127.0.0.1:25500/version || exit 1
-      interval: 30s
+      interval: 600s
       timeout: 5s
       retries: 5
       start_period: 30s
