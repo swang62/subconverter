@@ -1,0 +1,9 @@
+services:
+  subconverter:
+    container_name: subconverter
+    image: 'tindy2013/subconverter:latest'
+    expose:
+      - 25500
+    volumes:
+      - ./base/pref.toml:/base/pref.toml
+    restart: unless-stopped
