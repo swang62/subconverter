@@ -4,7 +4,7 @@ version = 1
 api_mode = true
 
 # Access token used for performing critical action through Web interface
-api_access_token = "supersecrettoken"
+api_access_token = "secret_token"
 
 # Default URLs, used when no URL is provided in request, use "|" to separate multiple subscription links, supports local files/URL
 default_url = []
@@ -17,10 +17,10 @@ insert_url = []
 prepend_insert_url = false
 
 # Exclude nodes which remarks match the following patterns. Supports regular expression.
-exclude_remarks = ["(到期|剩余流量|时间|官网|产品)"]
+exclude_remarks = []
 
 # Only include nodes which remarks match the following patterns. Supports regular expression.
-#include_remarks = ["V3.*港"]
+#include_remarks = []
 
 # Enable script support for filtering nodes
 enable_filter = false
@@ -145,7 +145,7 @@ replace = "$1x"
 write_managed_config = true
 
 # Address prefix for MANAGED-CONFIG info, without the trailing "/".
-managed_config_prefix = "http://127.0.0.1:25500"
+managed_config_prefix = "https://subconverter.mildlybrewed.com"
 
 # Managed config update interval in seconds, determine how long the config will be updated.
 config_update_interval = 86400
@@ -153,7 +153,7 @@ config_update_interval = 86400
 # If config_update_strict is set to true, Surge will require a force update after the interval.
 config_update_strict = false
 
-# Device ID to be written to rewrite scripts for some version of Quantumult X 
+# Device ID to be written to rewrite scripts for some version of Quantumult X
 quanx_device_id = ""
 
 [surge_external_proxy]
@@ -203,7 +203,7 @@ enabled = true
 overwrite_original_rules = false
 
 # Perform a ruleset update on request
-update_ruleset_on_request = false
+update_ruleset_on_request = true
 
 # [[rulesets]]
 # group = "Proxy"
